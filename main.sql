@@ -1,14 +1,15 @@
 --create a nomnom table if not exist
-CREATE TABLE IF NOT EXIST nomnom(
+CREATE TABLE IF NOT EXISTS nomnom (
     NAME TEXT,
     NEIGHBOURHOOD TEXT,
     CUISINE TEXT,
+    REVIEW REAL,
     PRICE REAL,
     HEALTH TEXT
 );
 
 --Insert sample data into the nomnom table
-INSERT INTO nomnom (NAME, NEIGHBOURHOOD, CUISINE, REVIEW, PRICE, HEALTH) VALUES
+INSERT INTO nomnom (NAME,NEIGHBOURHOOD,CUISINE,REVIEW,PRICE,HEALTH) VALUES
 
 ('Peter', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A'),
 ('Jongro', 'Midtown', 'Korean', 3.5, '$$', 'A'),
